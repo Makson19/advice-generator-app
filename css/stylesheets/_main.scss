@@ -1,0 +1,71 @@
+
+.main {
+    text-align: center;
+    background-color: $dark-grayish-blue;
+    border-radius: 0.5rem;
+    padding: 0 0.65rem;
+    width: 100%;
+    min-width: 8.2rem;
+    max-width: 17.86rem;
+    position: relative;
+
+    .advice-id {
+        color: $neon-green;
+        font-size: 0.45rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin: 1.1rem 0;
+    }
+
+    .advice-text {
+        color: $light-cyan;
+        font-size: 0.85rem;
+    }
+
+    .separator {
+        height: 1rem;
+        background: url("../images/pattern-divider-mobile.svg") no-repeat 50% 50%;
+        margin-top: 0.8rem;
+    }
+
+    .btn {
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: $neon-green;
+        border-style: none;
+        border-radius: 50%;
+        position: relative;
+        bottom: -1.2rem;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out;
+
+        & > img {
+            width: 0.86rem;
+            height: 0.86rem;
+            position: relative;
+            top: 0.03rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0 1rem 0.2rem $neon-green;
+        }
+    }
+}
+
+
+// ===== Media Queries ===== //
+@media (min-width: 376px) {
+    .main {
+        .advice-id {
+            font-size: 0.5rem;
+        }
+
+        .advice-text {
+            font-size: 1rem;
+        }
+
+        .separator {
+            background: url("../images/pattern-divider-desktop.svg") no-repeat 50% 50%;
+        }
+    }
+}
